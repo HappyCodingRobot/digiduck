@@ -24,7 +24,7 @@ def digidelay(integer):
 
 
 def digiprint(string, defdel):
-    r = ["\t" + digistr + ("println(\"%s\")" % escstr(string)) + ";\n"]
+    r = ["\t" + digistr + ("println(F(\"%s\"))" % escstr(string)) + ";\n"]
     r.extend(digidelay(defdel))
     return r
 
